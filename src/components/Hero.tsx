@@ -121,20 +121,20 @@ const Hero = () => {
             className="flex flex-col sm:flex-row flex-wrap gap-5"
           >
             <button 
-              onClick={() => navigate('/properties?type=buy')}
+              onClick={() => navigate('/properties?type=completed')}
               className="group flex items-center justify-center gap-3 bg-primary hover:bg-primary-dark text-white px-8 md:px-10 py-4 rounded-2xl font-bold transition-all shadow-[0_15px_40px_rgba(254,0,0,0.3)] hover:-translate-y-1 active:scale-95"
             >
               <Home size={22} className="group-hover:scale-110 transition-transform" />
-              <span>Buy Properties</span>
+              <span>Completed Projects</span>
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
             
             <button 
-              onClick={() => navigate('/properties?type=rent')}
+              onClick={() => navigate('/properties?type=ongoing')}
               className="group flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 text-white px-8 md:px-10 py-4 rounded-2xl font-bold transition-all hover:-translate-y-1 active:scale-95"
             >
               <Building size={22} className="group-hover:scale-110 transition-transform" />
-              <span>Rent Properties</span>
+              <span>Ongoing Projects</span>
             </button>
           </motion.div>
         </motion.div>

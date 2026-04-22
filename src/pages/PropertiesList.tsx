@@ -6,12 +6,12 @@ import { Link, useSearchParams } from 'react-router-dom';
 
 const PropertiesList = () => {
   const [searchParams] = useSearchParams();
-  const [filter, setFilter] = useState<'all' | 'buy' | 'rent'>('all');
+  const [filter, setFilter] = useState<'all' | 'completed' | 'ongoing'>('all');
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const type = searchParams.get('type');
-    if (type === 'buy' || type === 'rent') {
+    if (type === 'completed' || type === 'ongoing') {
       setFilter(type);
     }
   }, [searchParams]);
@@ -29,7 +29,7 @@ const PropertiesList = () => {
         {/* Header */}
         <div className="mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">
-            All Properties
+            All Projects
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl">
             Browse our complete portfolio of premium listings. From modern urban apartments to sprawling luxury villas.
@@ -39,7 +39,7 @@ const PropertiesList = () => {
         {/* Filters */}
         <div className="flex flex-col md:flex-row justify-between items-stretch md:items-center bg-white p-4 md:p-6 rounded-[32px] shadow-sm mb-12 gap-6 border border-gray-100">
           <div className="flex flex-wrap gap-2">
-            {(['all', 'buy', 'rent'] as const).map((t) => (
+            {(['all', 'completed', 'ongoing'] as const).map((t) => (
               <button
                 key={t}
                 onClick={() => setFilter(t)}
@@ -49,7 +49,7 @@ const PropertiesList = () => {
                     : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
                 }`}
               >
-                {t === 'all' ? 'All' : t === 'buy' ? 'For Sale' : 'For Rent'}
+                {t === 'all' ? 'Projects' : t === 'completed' ? 'Completed' : 'On going'}
               </button>
             ))}
           </div>
@@ -91,9 +91,9 @@ const PropertiesList = () => {
                 {/* Top Badge */}
                 <div className="absolute top-6 left-6">
                   <span className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/10 ${
-                    property.type === 'buy' ? 'bg-primary/90 text-white' : 'bg-gray-900/90 text-white'
+                    property.type === 'completed' ? 'bg-primary/90 text-white' : 'bg-gray-900/90 text-white'
                   }`}>
-                    For {property.type === 'buy' ? 'Sale' : 'Rent'}
+                    {property.type === 'completed' ? 'Completed' : 'On going'}
                   </span>
                 </div>
 

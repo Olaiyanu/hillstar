@@ -61,7 +61,7 @@ const PropertyDetail = () => {
                 />
                 <div className="absolute top-8 left-8">
                   <span className="px-6 py-2 bg-primary text-white rounded-full text-sm font-bold uppercase tracking-widest shadow-xl">
-                    For {property.type}
+                    {property.type === 'completed' ? 'Completed' : 'On going'}
                   </span>
                 </div>
               </motion.div>

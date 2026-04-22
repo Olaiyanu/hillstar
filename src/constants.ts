@@ -62,7 +62,7 @@ export const PROPERTIES: Property[] = [
     description: 'A masterpiece of modern architecture featuring smart home technology and premium finishes.',
     features: ['5 Bedrooms', 'Cinema Room', 'Swimming Pool', 'Smart Home'],
     image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1000',
-    type: 'buy'
+    type: 'completed'
   },
   {
     id: '2',
@@ -72,7 +72,7 @@ export const PROPERTIES: Property[] = [
     description: 'Luxurious penthouse with panoramic views of the Atlantic ocean.',
     features: ['3 Bedrooms', 'Ocean View', 'Private Gym', '24/7 Security'],
     image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000',
-    type: 'rent'
+    type: 'ongoing'
   },
   {
     id: '3',
@@ -82,7 +82,7 @@ export const PROPERTIES: Property[] = [
     description: 'Palatial villa in the heart of Abuja’s most prestigious neighborhood.',
     features: ['7 Bedrooms', 'Guest Chalet', 'Underground Parking', 'Smart Security'],
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000',
-    type: 'buy'
+    type: 'completed'
   },
   {
     id: '4',
@@ -92,7 +92,7 @@ export const PROPERTIES: Property[] = [
     description: 'Serene waterfront living in highly sought-after Ikoyi district.',
     features: ['4 Bedrooms', 'Boat Jetty', 'Club House', 'Green Area'],
     image: 'https://images.unsplash.com/photo-1600607687940-c52af036999b?q=80&w=1000',
-    type: 'rent'
+    type: 'ongoing'
   },
   {
     id: '5',
@@ -102,7 +102,7 @@ export const PROPERTIES: Property[] = [
     description: 'High-tech living in Africa’s fastest-growing business hub.',
     features: ['3 Bedrooms', 'Automation', 'Sky Lounge', 'Infinite Pool'],
     image: 'https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?q=80&w=1000',
-    type: 'buy'
+    type: 'completed'
   }
 ];
 
