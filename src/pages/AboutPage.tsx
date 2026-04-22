@@ -42,16 +42,10 @@ const AboutPage = () => {
 
             <div className="space-y-8 text-gray-600 leading-relaxed text-xl font-light">
               <p>
-                Established in 1992, Hillstar Nigeria Limited is a pioneering indigenous infrastructure company delivering comprehensive construction, engineering, and consultancy solutions to both public and private sectors across Nigeria.
+                Established in 1992, HILLSTAR Nigeria Limited is a leading indigenous infrastructure company providing end-to-end construction, engineering, and consultancy solutions to both public and private sector clients across Nigeria. With over three decades of proven experience, we have built a strong reputation for excellence, innovation, and integrity. Operating across key sectors of the Nigerian economy, HILLSTAR is strategically positioned to deliver high-impact, value-driven solutions tailored to the country’s evolving infrastructure demands. From Federal, State, and Local Governments to private enterprises, our clients trust us to transform vision into reality.
               </p>
               <p>
-                With over three decades of proven expertise, we are recognized for our unwavering commitment to excellence, innovation, and integrity. Operating across vital sectors of the Nigerian economy, Hillstar is uniquely positioned to deliver high-impact solutions tailored to the nation’s dynamic infrastructure needs. From federal and state governments to private enterprise, our clients trust us to bring their boldest ideas to life.
-              </p>
-              <p>
-                Through a network of specialized subsidiaries, Hillstar provides targeted services in General Contracting, Real Estate Development, Telecoms Infrastructure, Renewable Energy, Hospitality, and Procurement Services. Our integrated approach ensures technical precision, economic value, and long-term sustainability in every project.
-              </p>
-              <p>
-                At Hillstar Nigeria Limited, we don’t just build structures—we build legacies. We believe that infrastructure is more than just concrete and steel; it's the foundation of a nation's growth and the catalyst for a better future for all Nigerians.
+                Through a network of specialized subsidiaries, HILLSTAR delivers end-to-end solutions across General Contracting, Real Estate Development, Telecoms Infrastructure, Renewable Energy, Hospitality, and Procurement Services. Our integrated operating model combines technical precision, commercial efficiency, and long-term sustainability to deliver lasting value on every project.
               </p>
               <blockquote className="border-l-4 border-primary pl-8 py-4 italic text-2xl text-gray-900 font-display">
                 "Our unwavering commitment to excellence and integrity has been the bedrock of our success for over 30 years."

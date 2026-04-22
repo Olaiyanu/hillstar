@@ -28,7 +28,7 @@ export const SERVICES: Service[] = [
     title: 'Telecoms Infrastructure',
     icon: 'TowerControl',
     description: 'Building the backbone of Nigeria’s communication network with precision.',
-    fullDetails: 'Our engineering teams deliver robust telecommunications infrastructure solutions, from cell site construction to fiber optic deployment.'
+    fullDetails: 'Our engineering teams deliver robust telecommunications infrastructure solutions, from site acquisitions, permitting, cell site construction to fiber optic deployment.'
   },
   {
     id: 'renewable-energy',
@@ -56,19 +56,19 @@ export const SERVICES: Service[] = [
 export const PROPERTIES: Property[] = [
   {
     id: '1',
-    name: 'Lekki Pearl Estate',
-    location: 'Lekki Phase 1, Lagos',
-    description: 'A masterpiece of modern architecture featuring smart home technology and premium finishes.',
-    projectPeriod: 'Jan 2021 - Dec 2023',
+    name: 'HILLSTAR Court 1',
+    location: 'Plot L37, Legacy Boulevard, Ocean Bay Estate, Lekki',
+    description: 'Two (2) units of luxury 4-bedroom plus bq Semi Detached houses.',
+    projectPeriod: 'Dec 2021 - September,2022',
     image: '/images/properties/1.jpg',
     type: 'completed'
   },
   {
     id: '2',
-    name: 'Victoria Island Penthouse',
-    location: 'Victoria Island, Lagos',
-    description: 'Luxurious penthouse with panoramic views of the Atlantic ocean.',
-    projectPeriod: 'Mar 2023 - Present',
+    name: 'HILLSTAR Court 2',
+    location: 'Plot 19, Meadow WalkOcean Bay Estate, Lekki',
+    description: 'Six (6) units of 4-bedroom Maisonettes and 4bedroom Pent House Apartments.',
+    projectPeriod: 'September,2022 - December, 2023',
     image: '/images/properties/2.jpg',
     type: 'ongoing'
   },

@@ -64,10 +64,10 @@ const About = () => {
             
             <div className="space-y-6 text-gray-600 leading-relaxed text-lg font-light">
               <p>
-                Established in 1992, Hillstar Nigeria Limited is a pioneering indigenous infrastructure company delivering comprehensive construction, engineering, and consultancy solutions to both public and private sectors across Nigeria.
+                Established in 1992, HILLSTAR Nigeria Limited is a leading indigenous infrastructure company providing end-to-end construction, engineering, and consultancy solutions to both public and private sector clients across Nigeria.
               </p>
               <p>
-                With over three decades of proven expertise, we are recognized for our unwavering commitment to excellence, innovation, and integrity. Operating across vital sectors of the Nigerian economy, Hillstar is uniquely positioned...
+                With over three decades of proven experience, we have built a strong reputation for excellence, innovation, and integrity. Operating across key sectors of the Nigerian economy, HILLSTAR is strategically positioned...
               </p>
             </div>
 
