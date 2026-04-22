@@ -89,20 +89,14 @@ const Properties = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className="group bg-primary rounded-3xl overflow-hidden shadow-lg p-12 flex flex-col justify-center items-center text-center relative"
+          className="flex flex-col justify-center items-center h-full min-h-[250px]"
           >
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.2),transparent_70%)]" />
-            <h3 className="text-3xl font-display font-bold text-white mb-6 relative z-10">
-              Find Your Dream Home Today
-            </h3>
-            <p className="text-white/80 mb-10 relative z-10 leading-relaxed">
-              We have a wide range of luxury properties across Nigeria waiting for you.
-            </p>
             <Link 
               to="/properties"
-              className="bg-white text-primary px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all active:scale-95 relative z-10"
+            className="bg-primary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-xl transition-all active:scale-95 flex items-center gap-2 shadow-lg shadow-primary/20"
             >
-              Browse All
+            <span>Browse All Properties</span>
+            <ArrowRight size={20} />
             </Link>
           </motion.div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -49,13 +49,6 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
-          <a 
-            href="tel:+2349166876907" 
-            className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg active:scale-95"
-          >
-            <Phone size={16} />
-            <span>Call Us</span>
-          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -87,13 +80,6 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
-              <a 
-                href="tel:+2349166876907" 
-                className="flex items-center justify-center gap-2 bg-primary text-white py-4 rounded-xl text-lg font-bold"
-              >
-                <Phone size={20} />
-                <span>Get a Free Call</span>
-              </a>
             </div>
           </motion.div>
         )}
