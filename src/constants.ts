@@ -115,3 +115,9 @@ export const HERO_SLIDES = [
     description: "From concept to completion, we deliver high-quality residential and commercial construction tailored to your needs"
   }
 ];
+
+const FEATURED_IDS = ['1', '2', '3', '4'];
+
+export const FEATURED_PROPERTIES = PROPERTIES.filter(p => 
+  FEATURED_IDS.includes(p.id)
+);
