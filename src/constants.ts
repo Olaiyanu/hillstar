@@ -74,7 +74,7 @@ export const PROPERTIES: Property[] = [
   },
   {
     id: '3',
-    name: 'Paragon 1 Apartments a development by HILLSTAR',
+    name: 'Paragon I Apartments a development by HILLSTAR',
     location: ' Land Masters Street, Freedom way, Lekki Phase 1',
     description: 'Twenty-Five (25) units of luxury One-, Two- and 3-bedroom apartments.',
     projectPeriod: 'September,2023 – July, 2025',
@@ -83,7 +83,7 @@ export const PROPERTIES: Property[] = [
   },
   {
     id: '4',
-    name: 'Paragon 1 Apartments a development by HILLSTAR',
+    name: 'Paragon II Apartments a development by HILLSTAR',
     location: '7b Abeke Animashaun Street, Lekki Phase 1',
     description: 'Eight (8) units of luxury two (2) bedroom apartments.',
     projectPeriod: 'November,2024 – August, 2025',
@@ -101,6 +101,17 @@ export const PROPERTIES: Property[] = [
     projectType: 'Commercial',
     estimatedCompletionTime: 'September 2026'
   }
+  {
+    id: '6',
+    name: 'Paragon III Apartments a development by HILLSTAR',
+    location: ' 11 Providence Street, Lekki Pahse 1 ',
+    description: 'Twenty-Two (22) units of luxury One (1) and two (2) bedroom apartments.',
+    image: '/properties/6.jpg',
+    type: 'ongoing',
+    projectStart: 'January, 2026',
+    projectType: 'Commercial',
+    estimatedCompletionTime: 'September 2027'
+}
 ];
 
 export const HERO_SLIDES = [
