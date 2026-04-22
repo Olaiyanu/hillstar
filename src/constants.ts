@@ -100,7 +100,7 @@ export const PROPERTIES: Property[] = [
     projectStart: 'October, 2025',
     projectType: 'Commercial',
     estimatedCompletionTime: 'September 2026'
-  }
+  },
   {
     id: '6',
     name: 'Paragon III Apartments a development by HILLSTAR',
