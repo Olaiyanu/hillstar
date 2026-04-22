@@ -49,14 +49,7 @@ const Properties = () => {
                 {/* Fade Overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-gray-950 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-all duration-500" />
 
-                {/* Top Badge */}
-                <div className="absolute top-6 left-6">
-                  <span className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/10 ${
-                    property.type === 'buy' ? 'bg-primary/90 text-white' : 'bg-gray-900/90 text-white'
-                  }`}>
-                    For {property.type === 'buy' ? 'Sale' : 'Rent'}
-                  </span>
-                </div>
+    
 
                 {/* Bottom Content */}
                 <div className="absolute inset-x-0 bottom-0 p-8 md:p-10 flex flex-col items-start gap-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
