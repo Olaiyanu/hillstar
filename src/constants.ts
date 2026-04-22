@@ -104,7 +104,7 @@ export const PROPERTIES: Property[] = [
   {
     id: '6',
     name: 'Paragon III Apartments a development by HILLSTAR',
-    location: ' 11 Providence Street, Lekki Pahse 1 ',
+    location: ' 11 Providence Street, Lekki Pahse 1',
     description: 'Twenty-Two (22) units of luxury One (1) and two (2) bedroom apartments.',
     image: '/properties/6.jpg',
     type: 'ongoing',
