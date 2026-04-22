@@ -83,9 +83,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs tracking-wider text-gray-500 uppercase font-medium">
+        <div className="pt-10 flex flex-col md:flex-row justify-center items-center gap-4 text-xs tracking-wider text-gray-500 uppercase font-medium">
           <p>© 2026 Hillstar Nigeria Ltd. All Rights Reserved.</p>
-          <p>Built with excellence.</p>
         </div>
       </div>
     </footer>

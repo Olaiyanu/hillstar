@@ -104,7 +104,10 @@ const ServiceDetailPage = () => {
               </div>
 
               <div className="space-y-4">
-                 <button className="w-full flex items-center justify-center gap-3 bg-primary text-white py-5 rounded-2xl font-bold text-lg transition-all hover:bg-primary-dark shadow-[0_10px_30px_rgba(254,0,0,0.2)]">
+                 <button 
+                   onClick={() => navigate('/#contact')}
+                   className="w-full flex items-center justify-center gap-3 bg-primary text-white py-5 rounded-2xl font-bold text-lg transition-all hover:bg-primary-dark shadow-[0_10px_30px_rgba(254,0,0,0.2)]"
+                 >
                    <span>Inquire Now</span>
                    <ArrowRight size={20} />
                  </button>

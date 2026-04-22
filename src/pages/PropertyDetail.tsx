@@ -179,10 +179,10 @@ const PropertyDetail = () => {
                   <Phone size={18} />
                   <span>Call Agent</span>
                 </a>
-                <button className="w-full flex items-center justify-center gap-3 bg-white text-gray-900 border border-gray-200 py-4 rounded-xl font-bold transition-all hover:bg-gray-100">
+                <a href="mailto:info@hillstar.com.ng" className="w-full flex items-center justify-center gap-3 bg-white text-gray-900 border border-gray-200 py-4 rounded-xl font-bold transition-all hover:bg-gray-100">
                   <Mail size={18} />
                   <span>Send Message</span>
-                </button>
+                </a>
               </div>
 
               <div className="pt-6 border-t border-gray-100">
