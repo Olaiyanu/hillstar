@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { motion } from 'motion/react';
-import { MapPin, ArrowLeft, Calendar, Phone, Mail, Share2 } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { MapPin, ArrowLeft, Calendar, Phone, Mail, Share2, X } from 'lucide-react';
 import { PROPERTIES } from '../constants';
 
 const PropertyDetail = () => {
   const { id } = useParams();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const navigate = useNavigate();
   const property = PROPERTIES.find(p => p.id === id);
 
@@ -56,7 +57,8 @@ const PropertyDetail = () => {
                 <img 
                   src={property.image} 
                   alt={property.name}
-                  className="w-full aspect-[16/10] object-cover"
+                  className="w-full aspect-[16/10] object-cover cursor-pointer"
+                  onClick={() => setSelectedImage(property.image)}
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-8 left-8">
@@ -86,6 +88,7 @@ const PropertyDetail = () => {
                       src={img} 
                       alt={`Gallery ${i}`} 
                       className="w-full h-full object-cover"
+                    onClick={() => setSelectedImage(img)}
                       referrerPolicy="no-referrer"
                       onError={(e) => {
                         (e.currentTarget.parentElement as HTMLElement).style.display = 'none';
@@ -193,6 +196,35 @@ const PropertyDetail = () => {
             </div>
           </div>
         </div>
+
+        {/* Image Lightbox Modal */}
+        <AnimatePresence>
+          {selectedImage && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 md:p-10 cursor-zoom-out"
+              onClick={() => setSelectedImage(null)}
+            >
+              <button 
+                className="absolute top-6 right-6 md:top-10 md:right-10 text-white hover:text-primary transition-colors bg-white/10 hover:bg-white/20 p-2 rounded-full z-[110]"
+                onClick={() => setSelectedImage(null)}
+              >
+                <X size={32} />
+              </button>
+              <motion.img 
+                initial={{ scale: 0.9 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.9 }}
+                src={selectedImage} 
+                alt="Full size gallery view" 
+                className="max-w-full max-h-full object-contain rounded-xl shadow-2xl cursor-default"
+                onClick={(e) => e.stopPropagation()}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
