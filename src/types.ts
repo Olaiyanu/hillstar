@@ -10,11 +10,10 @@ export interface Property {
   id: string;
   name: string;
   location: string;
-  price: string;
   description: string;
-  features: string[];
+  projectPeriod: string;
   image: string;
-  type: 'buy' | 'rent';
+  type: 'completed' | 'ongoing';
 }
 
 export interface NavItem {

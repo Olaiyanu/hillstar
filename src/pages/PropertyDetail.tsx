@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { MapPin, ArrowLeft, BedDouble, Expand, CheckCircle2, Phone, Mail, Share2 } from 'lucide-react';
+import { MapPin, ArrowLeft, Calendar, Phone, Mail, Share2 } from 'lucide-react';
 import { PROPERTIES } from '../constants';
 
 const PropertyDetail = () => {
@@ -70,10 +70,10 @@ const PropertyDetail = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
                   property.image,
-                  `https://picsum.photos/seed/${property.id}-1/1000/800`,
-                  `https://picsum.photos/seed/${property.id}-2/1000/800`,
-                  `https://picsum.photos/seed/${property.id}-3/1000/800`,
-                  `https://picsum.photos/seed/${property.id}-4/1000/800`,
+                  `/images/properties/${property.id}-gallery-1.jpg`,
+                  `/images/properties/${property.id}-gallery-2.jpg`,
+                  `/images/properties/${property.id}-gallery-3.jpg`,
+                  `/images/properties/${property.id}-gallery-4.jpg`,
                 ].map((img, i) => (
                   <motion.div 
                     key={i}
@@ -87,80 +87,46 @@ const PropertyDetail = () => {
                       alt={`Gallery ${i}`} 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        (e.currentTarget.parentElement as HTMLElement).style.display = 'none';
+                      }}
                     />
                   </motion.div>
                 ))}
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-gray-100 pb-12">
+            <div className="flex flex-col gap-6 border-b border-gray-100 pb-12">
               <div>
-                <div className="flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase mb-4">
-                  <MapPin size={16} />
-                  <span>{property.location}</span>
+                <div className="flex flex-wrap items-center gap-4 text-primary font-bold text-sm tracking-widest uppercase mb-4">
+                  <div className="flex items-center gap-2">
+                    <MapPin size={16} className="shrink-0" />
+                    <span className="break-words">{property.location}</span>
+                  </div>
+                  <span className="text-gray-300 hidden sm:block">|</span>
+                  <div className="flex items-center gap-2 text-gray-500">
+                    <Calendar size={16} className="shrink-0" />
+                    <span className="break-words">Project Period: {property.projectPeriod}</span>
+                  </div>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 tracking-tight">
+                <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 tracking-tight break-words">
                   {property.name}
                 </h1>
-              </div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-gray-950">
-                {property.price}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-4">
-              <div className="flex flex-col gap-2">
-                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Bedrooms</span>
-                <div className="flex items-center gap-3 text-gray-900">
-                  <BedDouble size={20} className="text-primary" />
-                  <span className="text-xl font-bold">{property.features[0].split(' ')[0]} Units</span>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Type</span>
-                <div className="flex items-center gap-3 text-gray-900">
-                  <Expand size={20} className="text-primary" />
-                  <span className="text-xl font-bold">Residential</span>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Status</span>
-                <div className="flex items-center gap-3 text-gray-900">
-                  <CheckCircle2 size={20} className="text-primary" />
-                  <span className="text-xl font-bold">Verified</span>
-                </div>
               </div>
             </div>
 
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">Property Description</h3>
-              <p className="text-xl text-gray-600 leading-relaxed font-light">
+              <p className="text-xl text-gray-600 leading-relaxed font-light break-words">
                 {property.description}
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed break-words">
                 Experience unparalleled luxury and sophistication in this meticulously designed property by Hillstar Nigeria Limited. 
                 Every detail has been crafted with precision, from the high-end finishes to the integration of smart home technologies.
                 Located in a secure and tranquil environment, this residence offers the perfect blend of privacy and accessibility.
               </p>
             </div>
 
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Included Features</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {property.features.map((feature, i) => (
-                  <div key={i} className="flex items-center gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
-                    <CheckCircle2 className="text-primary" size={20} />
-                    <span className="font-bold text-gray-700">{feature}</span>
-                  </div>
-                ))}
-                {['24/7 Power Supply', 'Smart Security System', 'Dedicated Parking', 'High-Speed Fiber'].map((f, i) => (
-                  <div key={i} className="flex items-center gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
-                    <CheckCircle2 className="text-primary" size={20} />
-                    <span className="font-bold text-gray-700">{f}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Sidebar / Contact (Right) */}

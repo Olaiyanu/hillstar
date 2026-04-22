@@ -58,50 +58,45 @@ export const PROPERTIES: Property[] = [
     id: '1',
     name: 'Lekki Pearl Estate',
     location: 'Lekki Phase 1, Lagos',
-    price: '₦250,000,000',
     description: 'A masterpiece of modern architecture featuring smart home technology and premium finishes.',
-    features: ['5 Bedrooms', 'Cinema Room', 'Swimming Pool', 'Smart Home'],
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1000',
+    projectPeriod: 'Jan 2021 - Dec 2023',
+    image: '/images/properties/1.jpg',
     type: 'completed'
   },
   {
     id: '2',
     name: 'Victoria Island Penthouse',
     location: 'Victoria Island, Lagos',
-    price: '₦5,000,000/year',
     description: 'Luxurious penthouse with panoramic views of the Atlantic ocean.',
-    features: ['3 Bedrooms', 'Ocean View', 'Private Gym', '24/7 Security'],
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000',
+    projectPeriod: 'Mar 2023 - Present',
+    image: '/images/properties/2.jpg',
     type: 'ongoing'
   },
   {
     id: '3',
     name: 'Maitama Luxury Villa',
     location: 'Maitama, Abuja',
-    price: '₦450,000,000',
     description: 'Palatial villa in the heart of Abuja’s most prestigious neighborhood.',
-    features: ['7 Bedrooms', 'Guest Chalet', 'Underground Parking', 'Smart Security'],
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000',
+    projectPeriod: 'Jun 2018 - Nov 2020',
+    image: '/images/properties/3.jpg',
     type: 'completed'
   },
   {
     id: '4',
     name: 'Ikoyi Waterfront Apartment',
     location: 'Ikoyi, Lagos',
-    price: '₦8,500,000/year',
     description: 'Serene waterfront living in highly sought-after Ikoyi district.',
-    features: ['4 Bedrooms', 'Boat Jetty', 'Club House', 'Green Area'],
-    image: 'https://images.unsplash.com/photo-1600607687940-c52af036999b?q=80&w=1000',
+    projectPeriod: 'Jan 2024 - Present',
+    image: '/images/properties/4.jpg',
     type: 'ongoing'
   },
   {
     id: '5',
     name: 'Eko Atlantic Executive Flat',
     location: 'Eko Atlantic City, Lagos',
-    price: '₦350,000,000',
     description: 'High-tech living in Africa’s fastest-growing business hub.',
-    features: ['3 Bedrooms', 'Automation', 'Sky Lounge', 'Infinite Pool'],
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?q=80&w=1000',
+    projectPeriod: 'Feb 2020 - Aug 2022',
+    image: '/images/properties/5.jpg',
     type: 'completed'
   }
 ];
