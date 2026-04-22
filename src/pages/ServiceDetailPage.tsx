@@ -96,14 +96,6 @@ const ServiceDetailPage = () => {
 
           {/* Visualization / CTA */}
           <div className="lg:sticky lg:top-32 space-y-12">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              className="rounded-[40px] overflow-hidden shadow-2xl bg-gray-900 aspect-square md:aspect-video lg:aspect-square flex items-center justify-center relative group"
-            >
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(254,0,0,0.3),transparent_70%)] opacity-60" />
-              <Icon size={120} className="text-white relative z-10 opacity-20 group-hover:opacity-40 transition-opacity group-hover:scale-110 transition-transform duration-700" />
-            </motion.div>
 
             <div className="p-10 bg-white rounded-[40px] border-2 border-primary/10 shadow-2xl space-y-8">
               <div className="space-y-2">
