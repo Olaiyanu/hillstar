@@ -6,9 +6,7 @@ import { Link } from 'react-router-dom';
 const About = () => {
   const stats = [
     { icon: <Award size={24} />, value: '30+', label: 'Years Experience' },
-    { icon: <Users size={24} />, value: '1,000+', label: 'Clients Worldwide' },
-    { icon: <ShieldCheck size={24} />, value: '500+', label: 'Projects Completed' },
-    { icon: <Globe size={24} />, value: '36', label: 'Registered States' },
+    { icon: <ShieldCheck size={24} />, value: '150+', label: 'Projects Completed' },
   ];
 
   return (

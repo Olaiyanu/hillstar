@@ -12,9 +12,7 @@ const AboutPage = () => {
 
   const stats = [
     { icon: <Award size={24} />, value: '30+', label: 'Years Experience' },
-    { icon: <Users size={24} />, value: '1,000+', label: 'Clients Worldwide' },
     { icon: <ShieldCheck size={24} />, value: '500+', label: 'Projects Completed' },
-    { icon: <Globe size={24} />, value: '36', label: 'Registered States' },
   ];
 
   return (
@@ -50,9 +48,6 @@ const AboutPage = () => {
               <blockquote className="border-l-4 border-primary pl-8 py-4 italic text-2xl text-gray-900 font-display">
                 "Our unwavering commitment to excellence and integrity has been the bedrock of our success for over 30 years."
               </blockquote>
-              <p>
-                As we look to the future, we continue to embrace new technologies and sustainable practices to ensure that every project we undertake not only meets the needs of today but also stands the test of time for generations to come.
-              </p>
             </div>
           </div>
 
