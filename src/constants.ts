@@ -14,7 +14,7 @@ export const SERVICES: Service[] = [
     title: 'General Contracting',
     icon: 'Building2',
     description: 'Expert oversight and management for diverse construction projects across Nigeria.',
-    fullDetails: 'Established in 1992, Hillstar provides comprehensive general contracting services, ensuring technical precision and high-level project management for both residential and commercial buildings.'
+    fullDetails: 'Hillstar provides expert oversight and project management for a wide range of construction and related projects across Nigeria. Through our comprehensive general contracting services, we combine technical precision, quality execution, and disciplined project management to deliver outstanding results for our clients.'
   },
   {
     id: 'real-estate-development',
@@ -35,14 +35,14 @@ export const SERVICES: Service[] = [
     title: 'Renewable Energy',
     icon: 'Sun',
     description: 'Sustainable energy solutions for a greener, more self-reliant Nigeria.',
-    fullDetails: 'Hillstar is committed to renewable energy, offering solar installation and sustainable energy consulting to public and private sectors.'
+    fullDetails: 'Hillstar is committed to advancing renewable energy and green initiatives by driving sustainable development through clean, efficient, and dependable power solutions. We deliver low- and high-capacity renewable energy systems for homes, businesses, and institutions, helping to reduce electricity expenses, cut diesel costs, and enhance overall power reliability.'
   },
   {
     id: 'hospitality',
     title: 'Hospitality',
     icon: 'Palmtree',
     description: 'Creating world-class hospitality experiences and infrastructure.',
-    fullDetails: 'From luxury hotels to boutique guesthouses, we design and build spaces that prioritize comfort and premium service.'
+    fullDetails: 'Hillstar operates premium short-term rental apartments within our luxury development projects, thoughtfully curated to give guests the comfort and convenience of a hotel experience with so much more. Each residence is supported by 24/7 security, concierge services, professional cleaning services, gas cookers, microwaves, ovens, air conditioning, superfast internet, and cable TV. Through our intentional designs and attention to detail, we provide guests with exceptional comfort, elevated living, and truly memorable stays.'
   },
   {
     id: 'procurement-services',
@@ -70,23 +70,23 @@ export const PROPERTIES: Property[] = [
     description: 'Six (6) units of 4-bedroom Maisonettes and 4bedroom Pent House Apartments.',
     projectPeriod: 'September,2022 - December, 2023',
     image: '/properties/2.jpg',
-    type: 'ongoing'
+    type: 'completed'
   },
   {
     id: '3',
-    name: 'Maitama Luxury Villa',
-    location: 'Maitama, Abuja',
-    description: 'Palatial villa in the heart of Abuja’s most prestigious neighborhood.',
-    projectPeriod: 'Jun 2018 - Nov 2020',
+    name: 'Paragon 1 Apartments a development by HILLSTAR',
+    location: ' Land Masters Street, Freedom way, Lekki Phase 1',
+    description: 'Twenty-Five (25) units of luxury One-, Two- and 3-bedroom apartments.',
+    projectPeriod: 'September,2023 – July, 2025',
     image: '/properties/3.jpg',
     type: 'completed'
   },
   {
     id: '4',
-    name: 'Ikoyi Waterfront Apartment',
-    location: 'Ikoyi, Lagos',
-    description: 'Serene waterfront living in highly sought-after Ikoyi district.',
-    projectPeriod: 'Jan 2024 - Present',
+    name: 'Paragon 1 Apartments a development by HILLSTAR',
+    location: '7b Abeke Animashaun Street, Lekki Phase 1',
+    description: 'Eight (8) units of luxury two (2) bedroom apartments.',
+    projectPeriod: 'November,2024 – August, 2025',
     image: '/properties/4.jpg',
     type: 'ongoing'
   },

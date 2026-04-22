@@ -138,9 +138,6 @@ const PropertyDetail = () => {
               </div>
 
               <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-gray-100">
-                <div className="w-16 h-16 rounded-xl bg-gray-200 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200" alt="Agent" className="w-full h-full object-cover" />
-                </div>
                 <div>
                   <h5 className="font-bold text-gray-900">Hillstar Sales Team</h5>
                   <p className="text-xs text-gray-500 uppercase tracking-widest font-bold">Direct Contact</p>

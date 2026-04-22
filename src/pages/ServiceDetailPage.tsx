@@ -103,11 +103,6 @@ const ServiceDetailPage = () => {
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(254,0,0,0.3),transparent_70%)] opacity-60" />
               <Icon size={120} className="text-white relative z-10 opacity-20 group-hover:opacity-40 transition-opacity group-hover:scale-110 transition-transform duration-700" />
-              <div className="absolute inset-0 flex items-center justify-center p-12 text-center pointer-events-none">
-                 <h2 className="text-white text-3xl font-display font-bold relative z-20">
-                    Advancing Nigeria's Infrastructure thru {service.title}
-                 </h2>
-              </div>
             </motion.div>
 
             <div className="p-10 bg-white rounded-[40px] border-2 border-primary/10 shadow-2xl space-y-8">

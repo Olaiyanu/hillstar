@@ -16,9 +16,6 @@ const Footer = () => {
                 referrerPolicy="no-referrer"
               />
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              With deep market Knowledge, Integrity and Passion for Service, we turn property goals to lasting realities.
-            </p>
             <div className="flex gap-4">
               {[Instagram, Twitter, Linkedin].map((Icon, i) => (
                 <a 
