@@ -1,52 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import React from 'react';
+import { motion } from 'motion/react';
 import { ChevronRight, Home, Building } from 'lucide-react';
 import { HERO_SLIDES } from '../constants';
 import { useNavigate } from 'react-router-dom';
-
-const Typewriter = ({ texts }: { texts: string[] }) => {
-  const [index, setIndex] = useState(0);
-  const [displayText, setDisplayText] = useState('');
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [speed, setSpeed] = useState(10);
-
-  useEffect(() => {
-    const handleType = () => {
-      const currentFullText = texts[index];
-
-      if (isDeleting) {
-        setDisplayText(currentFullText.substring(0, displayText.length - 1));
-        setSpeed(30);
-      } else {
-        setDisplayText(currentFullText.substring(0, displayText.length + 1));
-        setSpeed(70);
-      }
-
-      if (!isDeleting && displayText === currentFullText) {
-        setSpeed(3000); // Wait at end
-        setIsDeleting(true);
-      } else if (isDeleting && displayText === '') {
-        setIsDeleting(false);
-        setIndex((prev) => (prev + 1) % texts.length);
-        setSpeed(500);
-      }
-    };
-
-    const timer = setTimeout(handleType, speed);
-    return () => clearTimeout(timer);
-  }, [displayText, isDeleting, index, texts, speed]);
-
-  return (
-    <div className="relative inline">
-      <span className="text-white whitespace-pre-wrap">{displayText}</span>
-      <motion.span
-        animate={{ opacity: [1, 0] }}
-        transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
-        className="inline-block w-1.5 h-[0.85em] bg-primary ml-1 align-middle translate-y-[-0.1em]"
-      />
-    </div>
-  );
-};
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -101,7 +57,7 @@ const Hero = () => {
           </motion.div>
           
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-6 leading-[1.15] tracking-tight">
-            <Typewriter texts={HERO_SLIDES.map(s => s.title)} />
+            {HERO_SLIDES[0].title}
           </h1>
           
           <motion.p 
