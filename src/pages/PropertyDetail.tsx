@@ -148,7 +148,7 @@ const PropertyDetail = () => {
               </div>
 
               <div className="space-y-3">
-                <a href="tel:+2349166876907" className="w-full flex items-center justify-center gap-3 bg-primary text-white py-4 rounded-xl font-bold transition-all hover:bg-primary-dark shadow-lg shadow-primary/20">
+                <a href="tel:09166876907" className="w-full flex items-center justify-center gap-3 bg-primary text-white py-4 rounded-xl font-bold transition-all hover:bg-primary-dark shadow-lg shadow-primary/20">
                   <Phone size={18} />
                   <span>Call Agent</span>
                 </a>
