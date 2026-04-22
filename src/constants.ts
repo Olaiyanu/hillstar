@@ -60,7 +60,7 @@ export const PROPERTIES: Property[] = [
     location: 'Plot L37, Legacy Boulevard, Ocean Bay Estate, Lekki',
     description: 'Two (2) units of luxury 4-bedroom plus bq Semi Detached houses.',
     projectPeriod: 'Dec 2021 - September,2022',
-    image: '/images/properties/1.jpg',
+    image: '/properties/1.jpg',
     type: 'completed'
   },
   {
@@ -69,7 +69,7 @@ export const PROPERTIES: Property[] = [
     location: 'Plot 19, Meadow WalkOcean Bay Estate, Lekki',
     description: 'Six (6) units of 4-bedroom Maisonettes and 4bedroom Pent House Apartments.',
     projectPeriod: 'September,2022 - December, 2023',
-    image: '/images/properties/2.jpg',
+    image: '/properties/2.jpg',
     type: 'ongoing'
   },
   {
@@ -78,7 +78,7 @@ export const PROPERTIES: Property[] = [
     location: 'Maitama, Abuja',
     description: 'Palatial villa in the heart of Abuja’s most prestigious neighborhood.',
     projectPeriod: 'Jun 2018 - Nov 2020',
-    image: '/images/properties/3.jpg',
+    image: '/properties/3.jpg',
     type: 'completed'
   },
   {
@@ -87,7 +87,7 @@ export const PROPERTIES: Property[] = [
     location: 'Ikoyi, Lagos',
     description: 'Serene waterfront living in highly sought-after Ikoyi district.',
     projectPeriod: 'Jan 2024 - Present',
-    image: '/images/properties/4.jpg',
+    image: '/properties/4.jpg',
     type: 'ongoing'
   },
   {
@@ -96,7 +96,7 @@ export const PROPERTIES: Property[] = [
     location: 'Eko Atlantic City, Lagos',
     description: 'High-tech living in Africa’s fastest-growing business hub.',
     projectPeriod: 'Feb 2020 - Aug 2022',
-    image: '/images/properties/5.jpg',
+    image: '/properties/5.jpg',
     type: 'completed'
   }
 ];

@@ -70,10 +70,10 @@ const PropertyDetail = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
                   property.image,
-                  `/images/properties/${property.id}-gallery-1.jpg`,
-                  `/images/properties/${property.id}-gallery-2.jpg`,
-                  `/images/properties/${property.id}-gallery-3.jpg`,
-                  `/images/properties/${property.id}-gallery-4.jpg`,
+                  `/properties/${property.id}-gallery-1.jpg`,
+                  `/properties/${property.id}-gallery-2.jpg`,
+                  `/properties/${property.id}-gallery-3.jpg`,
+                  `/properties/${property.id}-gallery-4.jpg`,
                 ].map((img, i) => (
                   <motion.div 
                     key={i}
