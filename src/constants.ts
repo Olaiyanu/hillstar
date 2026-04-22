@@ -88,16 +88,18 @@ export const PROPERTIES: Property[] = [
     description: 'Eight (8) units of luxury two (2) bedroom apartments.',
     projectPeriod: 'November,2024 – August, 2025',
     image: '/properties/4.jpg',
-    type: 'ongoing'
+    type: 'completed'
   },
   {
     id: '5',
-    name: 'Eko Atlantic Executive Flat',
-    location: 'Eko Atlantic City, Lagos',
-    description: 'High-tech living in Africa’s fastest-growing business hub.',
-    projectPeriod: 'Feb 2020 - Aug 2022',
+    name: 'Iwo Road Ultra Modern Market',
+    location: ' Iwo Road, Ibadan North East Local Government, Oyo State',
+    description: '450 Units of  commercial shops.',
     image: '/properties/5.jpg',
-    type: 'completed'
+    type: 'ongoing',
+    projectStart: 'October, 2025',
+    projectType: 'Commercial',
+    estimatedCompletionTime: 'September 2026'
   }
 ];
 

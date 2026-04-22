@@ -11,9 +11,12 @@ export interface Property {
   name: string;
   location: string;
   description: string;
-  projectPeriod: string;
+  projectPeriod?: string;
   image: string;
   type: 'completed' | 'ongoing';
+  projectStart?: string;
+  projectType?: string;
+  estimatedCompletionTime?: string;
 }
 
 export interface NavItem {

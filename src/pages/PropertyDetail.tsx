@@ -103,11 +103,41 @@ const PropertyDetail = () => {
                     <MapPin size={16} className="shrink-0" />
                     <span className="break-words">{property.location}</span>
                   </div>
-                  <span className="text-gray-300 hidden sm:block">|</span>
-                  <div className="flex items-center gap-2 text-gray-500">
-                    <Calendar size={16} className="shrink-0" />
-                    <span className="break-words">Project Period: {property.projectPeriod}</span>
-                  </div>
+                  {property.projectPeriod && (
+                    <>
+                      <span className="text-gray-300 hidden sm:block">|</span>
+                      <div className="flex items-center gap-2 text-gray-500">
+                        <Calendar size={16} className="shrink-0" />
+                        <span className="break-words">Project Period: {property.projectPeriod}</span>
+                      </div>
+                    </>
+                  )}
+                  {property.projectStart && (
+                    <>
+                      <span className="text-gray-300 hidden sm:block">|</span>
+                      <div className="flex items-center gap-2 text-gray-500">
+                        <Calendar size={16} className="shrink-0" />
+                        <span className="break-words">Started: {property.projectStart}</span>
+                      </div>
+                    </>
+                  )}
+                  {property.estimatedCompletionTime && (
+                    <>
+                      <span className="text-gray-300 hidden sm:block">|</span>
+                      <div className="flex items-center gap-2 text-gray-500">
+                        <Calendar size={16} className="shrink-0" />
+                        <span className="break-words">Est. Completion: {property.estimatedCompletionTime}</span>
+                      </div>
+                    </>
+                  )}
+                  {property.projectType && (
+                    <>
+                      <span className="text-gray-300 hidden sm:block">|</span>
+                      <div className="flex items-center gap-2 text-gray-500">
+                        <span className="break-words">Type: {property.projectType}</span>
+                      </div>
+                    </>
+                  )}
                 </div>
                 <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 tracking-tight break-words">
                   {property.name}
