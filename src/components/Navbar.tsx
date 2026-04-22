@@ -31,7 +31,7 @@ const Navbar = () => {
           <img 
             src="/logo.png" 
             alt="Hillstar Logo" 
-            className="h-10 md:h-12 w-auto object-contain"
+            className="h-16 md:h-24 w-auto object-contain"
             referrerPolicy="no-referrer"
           />
         </Link>

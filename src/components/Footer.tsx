@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src="/logo.png" 
                 alt="Hillstar Logo" 
-                className="h-10 w-auto object-contain"
+                className="h-28 md:h-32 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </div>
