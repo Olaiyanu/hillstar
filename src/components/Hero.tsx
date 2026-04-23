@@ -22,10 +22,6 @@ const Hero = () => {
               <span>Infrastructure Excellence Since 1992</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight tracking-tight">
-              {HERO_SLIDES[0].title}
-            </h1>
-            
             <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
               From concept to completion, we deliver high-quality residential 
               and commercial construction tailored to your needs.
