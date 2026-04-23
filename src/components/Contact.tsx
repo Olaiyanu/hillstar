@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Send, Phone, Clock, MapPin, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Send, Phone, Clock, MapPin, Instagram } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -49,15 +49,24 @@ const Contact = () => {
             <div className="space-y-4">
               <p className="text-sm font-bold uppercase tracking-widest text-gray-400">Connect with us</p>
               <div className="flex gap-4">
-                {[Instagram, Twitter, Linkedin].map((Icon, i) => (
-                  <a 
-                    key={i} 
-                    href="#" 
-                    className="w-12 h-12 rounded-2xl bg-gray-900 text-white flex items-center justify-center hover:bg-primary transition-all hover:-translate-y-1 shadow-lg"
-                  >
-                    <Icon size={20} />
-                  </a>
-                ))}
+                <a 
+                  href="https://www.instagram.com/hillstarng?igsh=MWN5M2pmemxmdTE4aw==" 
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-2xl bg-gray-900 text-white flex items-center justify-center hover:bg-primary transition-all hover:-translate-y-1 shadow-lg"
+                >
+                  <Instagram size={20} />
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@hillstar_development?_r=1&_t=ZS-95kXI0hGiLU" 
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-2xl bg-gray-900 text-white flex items-center justify-center hover:bg-primary transition-all hover:-translate-y-1 shadow-lg"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

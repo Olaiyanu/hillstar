@@ -43,7 +43,7 @@ const Hero = () => {
       </div>
 
       {/* Light Overlay */}
-      <div className="absolute inset-0 z-10 bg-white/40" />
+      <div className="absolute inset-0 z-10 bg-white/50 backdrop-blur-[2px]" />
       
       {/* Centered Text Content */}
       <motion.div 
@@ -56,7 +56,7 @@ const Hero = () => {
           <span>Infrastructure Excellence Since 1992</span>
         </div>
         
-        <p className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-semibold mb-10 leading-snug max-w-4xl drop-shadow-sm">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-10 leading-snug max-w-4xl text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500 drop-shadow-[0_0_15px_rgba(255,255,255,1)]">
           {HERO_SLIDES[0].description}
         </p>
 
