@@ -5,10 +5,10 @@ import { HERO_SLIDES } from '../constants';
 import { useNavigate } from 'react-router-dom';
 
 const HERO_IMAGES = [
-  "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2000",
   "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000",
-  "https://images.unsplash.com/photo-1600607687920-4e2a09be1587?q=80&w=2000"
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000",
+  "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2000",
+  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2000"
 ];
 
 const Hero = () => {
@@ -50,8 +50,12 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative z-20 flex flex-col items-center px-6"
+        className="relative z-20 flex flex-col items-center px-6 mt-24 md:mt-32"
       >
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md shadow-sm text-primary text-sm font-bold tracking-wide mb-6">
+          <span>Infrastructure Excellence Since 1992</span>
+        </div>
+        
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-gray-900 mb-6 leading-tight tracking-tight">
           {HERO_SLIDES[0].title}
         </h1>

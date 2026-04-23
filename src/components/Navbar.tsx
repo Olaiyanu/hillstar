@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled || !isHome ? 'bg-white/95 backdrop-blur-sm shadow-sm py-4' : 'bg-transparent py-6'
+        scrolled || !isHome ? 'bg-white/95 backdrop-blur-md shadow-md py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -42,18 +42,21 @@ const Navbar = () => {
             <Link 
               key={item.label}
               to={item.href}
-              className={`text-sm font-medium tracking-wide hover:text-primary transition-colors ${
-                'text-gray-800'
-              }`}
+              className={`relative text-xs lg:text-sm font-bold uppercase tracking-widest transition-colors py-2 group ${
+                scrolled || !isHome ? 'text-gray-600' : 'text-gray-800'
+              } hover:text-primary`}
             >
               {item.label}
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </div>
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden p-2 rounded-lg text-gray-900"
+          className={`md:hidden p-2 rounded-lg transition-colors ${
+            scrolled || !isHome ? 'text-gray-600' : 'text-gray-800'
+          } hover:text-primary`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -75,8 +78,9 @@ const Navbar = () => {
                   key={item.label}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-gray-900 hover:text-primary transition-colors"
+                className="flex items-center text-lg font-bold uppercase tracking-widest text-gray-700 hover:text-primary transition-all group"
                 >
+                <span className="w-0 h-[2px] bg-primary mr-0 transition-all duration-300 group-hover:w-6 group-hover:mr-4"></span>
                   {item.label}
                 </Link>
               ))}
