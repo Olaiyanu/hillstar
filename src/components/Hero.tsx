@@ -43,7 +43,7 @@ const Hero = () => {
       </div>
 
       {/* Light Overlay */}
-      <div className="absolute inset-0 z-10 bg-white/50 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 z-10 bg-white/50" />
       
       {/* Centered Text Content */}
       <motion.div 
