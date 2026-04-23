@@ -56,9 +56,7 @@ const Hero = () => {
             <span>Infrastructure Excellence Since 1992</span>
           </motion.div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-6 leading-[1.15] tracking-tight">
-            {HERO_SLIDES[0].title}
-          </h1>
+          
           
           <motion.p 
             initial={{ opacity: 0 }}
