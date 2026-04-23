@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-5'
+        scrolled || !isHome ? 'bg-white/95 backdrop-blur-sm shadow-sm py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -43,7 +43,7 @@ const Navbar = () => {
               key={item.label}
               to={item.href}
               className={`text-sm font-medium tracking-wide hover:text-primary transition-colors ${
-                scrolled || !isHome ? 'text-gray-700' : 'text-white/90'
+                'text-gray-800'
               }`}
             >
               {item.label}
@@ -53,7 +53,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button 
-          className={`md:hidden p-2 rounded-lg ${scrolled || !isHome ? 'text-gray-900' : 'text-white'}`}
+          className="md:hidden p-2 rounded-lg text-gray-900"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
