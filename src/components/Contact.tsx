@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Send, Phone, Clock, MapPin, Instagram } from 'lucide-react';
+import { Send, Phone, Clock, MapPin, Instagram, Facebook } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -66,6 +66,14 @@ const Contact = () => {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
                   </svg>
+                </a>
+                <a 
+                href="https://www.facebook.com/share/1EE5hP3TCC/?mibextid=wwXIfr" 
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-2xl bg-gray-900 text-white flex items-center justify-center hover:bg-primary transition-all hover:-translate-y-1 shadow-lg"
+                >
+                  <Facebook size={20} />
                 </a>
               </div>
             </div>
