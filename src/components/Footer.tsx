@@ -61,9 +61,16 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6">Our Services</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              {['General Contracting', 'Real Estate Development', 'Telecoms Infrastructure', 'Renewable Energy', 'Hospitality', 'Procurement'].map((link) => (
-                <li key={link}>
-                  <a href="#" className="hover:text-primary transition-colors">{link}</a>
+              {[
+                { name: 'General Contracting', href: '/services/general-contracting' },
+                { name: 'Real Estate Development', href: '/services/real-estate-development' },
+                { name: 'Telecoms Infrastructure', href: '/services/telecoms-infrastructure' },
+                { name: 'Renewable Energy', href: '/services/renewable-energy' },
+                { name: 'Hospitality', href: '/services/hospitality' },
+                { name: 'Procurement Services', href: '/services/procurement-services' }
+              ].map((link) => (
+                <li key={link.name}>
+                  <a href={link.href} className="hover:text-primary transition-colors">{link.name}</a>
                 </li>
               ))}
             </ul>
