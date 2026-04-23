@@ -59,47 +59,58 @@ export const PROPERTIES: Property[] = [
     name: 'HILLSTAR Court 1',
     location: 'Plot L37, Legacy Boulevard, Ocean Bay Estate, Lekki',
     description: 'Two (2) units of luxury 4-bedroom plus bq Semi Detached houses.',
-    projectPeriod: 'Dec 2021 - September,2022',
+    projectPeriod: 'Dec 2021 - September 2022',
     image: '/properties/1.jpg',
     type: 'completed'
   },
   {
     id: '2',
     name: 'HILLSTAR Court 2',
-    location: 'Plot 19, Meadow WalkOcean Bay Estate, Lekki',
-    description: 'Six (6) units of 4-bedroom Maisonettes and 4bedroom Pent House Apartments.',
-    projectPeriod: 'September,2022 - December, 2023',
+    location: 'Plot 19, Meadow Walk, Ocean Bay Estate, Lekki',
+    description: 'Six (6) units of 4-bedroom Maisonettes and 4-bedroom Penthouse Apartments.',
+    projectPeriod: 'September 2022 - December 2023',
     image: '/properties/2.jpg',
     type: 'completed'
   },
   {
     id: '3',
-    name: 'Paragon 1 Apartments a development by HILLSTAR',
-    location: ' Land Masters Street, Freedom way, Lekki Phase 1',
+    name: 'Paragon I Apartments a development by HILLSTAR',
+    location: 'Land Masters Street, Freedom Way, Lekki Phase 1',
     description: 'Twenty-Five (25) units of luxury One-, Two- and 3-bedroom apartments.',
-    projectPeriod: 'September,2023 – July, 2025',
+    projectPeriod: 'September 2023 - July 2025',
     image: '/properties/3.jpg',
     type: 'completed'
   },
   {
     id: '4',
-    name: 'Paragon 1 Apartments a development by HILLSTAR',
+    name: 'Paragon II Apartments a development by HILLSTAR',
     location: '7b Abeke Animashaun Street, Lekki Phase 1',
     description: 'Eight (8) units of luxury two (2) bedroom apartments.',
-    projectPeriod: 'November,2024 – August, 2025',
+    projectPeriod: 'November 2024 - August 2025',
     image: '/properties/4.jpg',
     type: 'completed'
   },
   {
     id: '5',
     name: 'Iwo Road Ultra Modern Market',
-    location: ' Iwo Road, Ibadan North East Local Government, Oyo State',
-    description: '450 Units of  commercial shops.',
+    location: 'Iwo Road, Ibadan North East Local Government, Oyo State',
+    description: '450 units of commercial shops.',
     image: '/properties/5.jpg',
     type: 'ongoing',
-    projectStart: 'October, 2025',
+    projectStart: 'October 2025',
     projectType: 'Commercial',
     estimatedCompletionTime: 'September 2026'
+  },
+  {
+    id: '6',
+    name: 'Paragon III Apartments a development by HILLSTAR',
+    location: '11 Providence Street, Lekki Phase 1',
+    description: 'Twenty-Two (22) units of luxury One (1) and Two (2) bedroom apartments.',
+    image: '/properties/6.jpg',
+    type: 'ongoing',
+    projectStart: 'January 2026',
+    projectType: 'Commercial',
+    estimatedCompletionTime: 'September 2027'
   }
 ];
 
