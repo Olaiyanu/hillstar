@@ -56,11 +56,7 @@ const Hero = () => {
           <span>Infrastructure Excellence Since 1992</span>
         </div>
         
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-gray-900 mb-6 leading-tight tracking-tight">
-          {HERO_SLIDES[0].title}
-        </h1>
-        
-        <p className="text-lg sm:text-xl text-gray-700 mb-10 leading-relaxed max-w-3xl">
+        <p className="text-2xl sm:text-3xl md:text-4xl text-gray-900 font-semibold mb-10 leading-snug max-w-4xl drop-shadow-sm">
           {HERO_SLIDES[0].description}
         </p>
 

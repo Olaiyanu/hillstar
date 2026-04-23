@@ -67,14 +67,14 @@ const PropertiesList = () => {
         </div>
 
         {/* Listing */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
           {filteredProperties.map((property, index) => (
             <motion.div
               key={property.id}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
-              className="group relative aspect-[4/5] rounded-[40px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 border border-gray-100 bg-white"
+              className="group relative aspect-[16/9] rounded-[40px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 border border-gray-100 bg-white"
             >
               <Link to={`/properties/${property.id}`} className="block w-full h-full relative">
                 {/* Image */}
@@ -99,9 +99,9 @@ const PropertiesList = () => {
 
                 {/* Bottom Content */}
                 <div className="absolute inset-x-0 bottom-0 p-8 md:p-10 flex flex-col items-start gap-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                  <div className="flex items-center gap-2 text-white/70">
-                    <MapPin size={14} className="text-primary" />
-                    <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em]">
+                  <div className="flex items-start gap-3 text-white/90">
+                    <MapPin size={18} className="text-primary shrink-0 mt-0.5" />
+                    <span className="text-xs md:text-sm font-bold uppercase tracking-[0.15em] leading-snug text-left">
                       {property.location}
                     </span>
                   </div>
