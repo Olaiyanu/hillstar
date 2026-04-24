@@ -117,15 +117,15 @@ export const PROPERTIES: Property[] = [
 export const HERO_SLIDES = [
   {
     title: "Modern House Make Better Life",
-    description: "From concept to completion, we deliver high-quality residential and commercial construction tailored to your needs"
+    description: "From concept to completion, we deliver high-quality infrastructure, residential, commercial and strategic projects tailored to your needs."
   },
   {
     title: "Let Your Home Be Unique & Stylist",
-    description: "From concept to completion, we deliver high-quality residential and commercial construction tailored to your needs"
+    description: "From concept to completion, we deliver high-quality infrastructure, residential, commercial and strategic projects tailored to your needs."
   },
   {
     title: "Building Your Vision, Crafting with Precision",
-    description: "From concept to completion, we deliver high-quality residential and commercial construction tailored to your needs"
+    description: "From concept to completion, we deliver high-quality infrastructure, residential, commercial and strategic projects tailored to your needs."
   }
 ];
 
