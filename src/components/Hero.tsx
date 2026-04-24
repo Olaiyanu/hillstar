@@ -40,8 +40,8 @@ const Hero = () => {
             referrerPolicy="no-referrer"
           />
         </AnimatePresence>
-      </div>
 
+      </div>
       {/* Light Overlay */}
       <div className="absolute inset-0 z-10 bg-white/50" />
       
