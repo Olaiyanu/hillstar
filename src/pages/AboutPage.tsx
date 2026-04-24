@@ -31,7 +31,7 @@ const AboutPage = () => {
           {/* Header & Content */}
           <div className="space-y-12">
             <div>
-              <span className="text-primary font-bold text-xs tracking-widest uppercase mb-4 block">Our Full Story</span>
+            <span className="text-primary font-bold text-xs tracking-widest uppercase mb-4 block">ABOUT US</span>
               <h1 className="text-4xl md:text-6xl font-display font-bold text-gray-900 leading-tight tracking-tight">
                 Building Nigeria’s Future, One Landmark at a Time
               </h1>
